@@ -1,13 +1,15 @@
-PyMuPDF==1.23.26
+PyMuPDF==1.23.26 # for reading PDFs with Python
 matplotlib==3.8.3
 numpy==1.26.4
 pandas==2.2.1
 Requests==2.31.0
-sentence_transformers==2.5.1
+sentence_transformers==2.5.1 # for embedding models
 spacy
-tqdm==4.66.2
+tqdm==4.66.2 # for progress bars
 transformers==4.38.2
-accelerate
-bitsandbytes
+accelerate # for quantization model loading
+bitsandbytes # for quantizing models (less storage space)
 jupyter
 wheel
+# torch --index-url https://download.pytorch.org/whl/cu124 # requires torch 2.1.1+ (for efficient sdpa implementation)
+# flash-attn --no-build-isolation # for faster attention mechanism = faster LLM inference
